@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-wrapper{
+    background-color: #f1f1f1;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.section{
+    display: grid;
+    grid-gap: 2em;
+    margin-top: 30px;
+
+    grid-template-areas:
+            "a c r"
+            "n v x";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns:2.5fr 8fr 2fr;
+}
+/*Header----------------------------------------------------*/
+
+.header{
+    display: flex;
+
+}
+
+
+.header-wrapper{
+    max-width: 100%;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, .2);
+}
+
+.header ul{
+    display: flex;
+    margin-top: 8px;
+
+
+}
+.header a{
+    padding-right: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000000;
+
+    transition: .2s;
+}
+.header a:hover{
+
+    color: #0cef2c;
+}
+.header_logo {
+    margin: 8px 60px 10px 2px ;
+    height: 40px;
+    width: 50px;
+    border: 1px solid #0cef2c;
+    border-radius: 8px 22px 15px 30px;
+    background-color: #0cef2c;
+}
+
+/*Avtar------------------------------------*/
+
+.ava{
+    grid-area: a;
+    grid-row: 1/1;
+    background-color:#ffffff;
+    box-shadow: 10px -10px 30px -10px rgba(0, 0, 0, .2);
+}
+.ava img{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 10px;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #f1f1f1;
+    border-radius: 50%;
+}
+.ava h1{
+    font-family: "Roboto Light";
+    font-weight: 100;
+    font-size: 18px;
+    text-align: end;
+    line-height: 2px;
+    padding-right: 10px;
+}
+
+
+
+.content{
+    grid-area: c;
+    grid-row: 1/4;
+    background-color: #ffffff;
+    box-shadow: 10px -10px 30px -10px rgba(0, 0, 0, .2);
+    min-height: 1000px;
+
+}
+
+.rec{
+    grid-area: r;
+    grid-row: 1/3;
+    background-color: #ffffff;
+    box-shadow: 10px -10px 30px -10px rgba(0, 0, 0, .2);
+}
+
+.nav{
+    grid-area: n;
+    grid-row: 2/4;
+    background-color: #ffffff;
+    box-shadow: 10px -10px 30px -10px rgba(0, 0, 0, .2);
+}
+
